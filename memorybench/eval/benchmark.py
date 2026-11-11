@@ -30,7 +30,8 @@ from pathlib import Path
 import structlog
 
 from memorybench.agent.agent import MemoryAgent
-from memorybench.eval.datasets import ConversationTurn, TestCase, get_all_test_cases
+from memorybench.config import settings
+from memorybench.eval.datasets import TestCase, get_all_test_cases
 from memorybench.eval.metrics import BenchmarkResult, LLMJudge
 from memorybench.memory.forgetting import ForgettingPolicy
 from memorybench.memory.summarizer import (
@@ -38,9 +39,7 @@ from memorybench.memory.summarizer import (
     CompressionStrategy,
     HierarchicalSummarizer,
     TruncationStrategy,
-    count_tokens,
 )
-from memorybench.config import settings
 
 log = structlog.get_logger(__name__)
 

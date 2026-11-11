@@ -28,8 +28,8 @@ Why not just re-ask the question?
 from __future__ import annotations
 
 import numpy as np
-from openai import AsyncOpenAI
 import structlog
+from openai import AsyncOpenAI
 
 from memorybench.config import settings
 

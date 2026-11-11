@@ -7,7 +7,9 @@ rather than a confusing AuthenticationError deep in a benchmark run.
 """
 
 from __future__ import annotations
+
 from functools import lru_cache
+
 from pydantic import Field
 from pydantic_settings import BaseSettings
 

@@ -32,7 +32,6 @@ import structlog
 from openai import AsyncOpenAI
 
 from memorybench.config import settings
-from memorybench.memory.summarizer import count_tokens
 
 log = structlog.get_logger(__name__)
 

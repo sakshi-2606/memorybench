@@ -9,7 +9,6 @@ No API calls in unit tests — forgetting and store tests are purely
 local. Compression tests that need an LLM are marked integration.
 """
 
-import time
 import pytest
 
 from memorybench.memory.episodic_store import EpisodicMemoryStore, MemoryEpisode
